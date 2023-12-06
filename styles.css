@@ -1,0 +1,1123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background: url('./images/hh.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    color: white; /* Add text color or other styles as needed */
+    /* Add any other styles for your container */
+    overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.left-image,
+.right-image {
+    max-width: 45%; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        position: relative; /* Reset position to allow background overflow */
+    }
+
+    .left-image,
+    .right-image {
+        max-width: 65%; /* Decreased width for smaller screens */
+        margin-bottom: 1px; /* Add space between images */
+    }
+}
+
+
+
+/* section 1 */
+
+.section-1 {
+    background: url('./images/depositphotos_99864270-stock-photo-finance-word-cloud.jpg') center/cover no-repeat;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px; /* Adjust the padding to decrease overall size */
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(246, 173, 36);
+    width: 350px; /* Adjust the width to decrease overall size */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+
+.form-container:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+h2 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ff9900;
+    font-size: 40px;
+    margin-bottom: 20px; /* Add some spacing between the heading and form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.form-group:hover {
+    transform: translateY(-5px); /* Increase size on the upward side on hover */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff9900;
+}
+
+input,
+select {
+    width: calc(100% - 1px);
+    padding: 8px;
+    border: 1px solid #ff9900;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+input:hover,
+select:hover,
+input:focus,
+select:focus {
+    border-color: #ffcc00; /* Change border color on hover or focus */
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); /* Increase shadow density on hover or focus */
+}
+
+
+.button1 {
+    width: 100%;
+    padding: 10px;
+    background: radial-gradient(circle, #ffcc00, #ff9900);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 0.3s ease; /* Add a smooth transition for background color */
+}
+
+.button1:hover {
+    background: radial-gradient(circle, #ff9900, #ffcc00); /* Change background color on hover */
+}
+
+/* section 2 */
+/* Section 2 Styles */
+/* Section 2 */
+.section-2 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+/* Section heading styling */
+/* Section heading styling */
+.section-heading1 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 34px; /* Adjust font size as needed */
+    margin-bottom: 60px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.section-heading1:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading1:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+
+.section-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text1-container1 {
+    width: 45%; /* Adjust width as needed */
+    padding-left: 20px;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.text1-container1 p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5;
+}
+
+.text1-container1:hover {
+    transform: translateY(-5px); /* Increase size on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px; /* Add margin between paragraph and list */
+    /* Center the list items */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add margin between list items */
+    position: relative; /* Position relative for pseudo-element styling */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+ul li:hover {
+    transform: translateX(5px); /* Increase size on hover */
+}
+
+ul li:before {
+    content: '\2022'; /* Bullet point Unicode character */
+    color: #ff9900; /* Orange color */
+    font-size: 20px; /* Adjust font size as needed */
+    position: absolute;
+    left: -20px; /* Adjust the distance of the bullet point from the text */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image1-container1 {
+    width: 45%; /* Adjust width as needed */
+    text-align: center; /* Center the image */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.image1-container1 img {
+    width: 50%; /* Adjust the width of the image */
+    height: auto;
+    display: block; /* Remove any residual spacing below the image */
+    margin: 0 auto; /* Center the image */
+}
+
+.image1-container1:hover {
+    transform: translateY(-5px); /* Increase size on hover */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .section-container1 {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .text1-container1 {
+        width: 100%; /* Make elements take full width on smaller screens */
+        margin-bottom: 20px; /* Add margin between elements */
+        padding-left: 0; /* Remove left padding on smaller screens */
+    }
+
+    .image1-container1 {
+        width: 100%; /* Make elements take full width on smaller screens */
+        margin-bottom: 20px; /* Add margin between elements */
+    }
+}
+
+
+/* Section 3 */
+.section-3 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Section heading styling */
+/* Section heading styling */
+.section-heading3 {
+    color: #ffffff; /* Text color */
+    text-align: center;
+    font-size: 40px; /* Adjust font size as needed */
+    font-weight: 700; /* Make the text bold */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    background: linear-gradient(45deg, #ffcc00, #ff9900); /* Yellow to orange gradient background */
+    padding: 10px 20px; /* Add padding to create a button-like appearance */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Add pointer cursor for better user interaction */
+    transition: background 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+}
+
+/* Change background and add zoom-in effect on hover */
+.section-heading3:hover {
+    background: linear-gradient(45deg, #ff9900, #ffcc00); /* Orange to yellow gradient background */
+    transform: scale(1.08); /* Zoom in effect on hover */
+}
+
+/* Image styling with subtle zoom effect */
+.section-image3 {
+    width: 100%; /* Make the image fill its container */
+    height: auto;
+    display: block; /* Remove any residual spacing below the image */
+    margin: 0 auto; /* Center the image */
+    transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+}
+
+
+
+.section-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-link3 {
+    margin-top: 20px; /* Add margin between heading and image */
+    text-align: center; 
+    
+}
+
+.image-link3 img {
+    width: 70%; /* Make the image fill its container */
+    height: auto;
+    display: block; /* Remove any residual spacing below the image */
+    cursor: pointer; /* Add pointer cursor for better user interaction */
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* Add a shadow to the image link */
+}
+
+/* Section 4 */
+.section-4 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Section heading styling */
+.section-heading4 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 34px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.section-heading4:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading4:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Button container styling */
+.button-container4 {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust space between buttons */
+    padding-top: 80px;
+}
+
+/* Primary button styling */
+.primary-button,
+.secondary-button {
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+}
+
+/* Primary button styling */
+.primary-button,
+.secondary-button {
+    background: radial-gradient(circle, rgb(0, 0, 0), #a06001); /* Orange gradient background */
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* Hover effects for both buttons */
+.primary-button:hover,
+.secondary-button:hover {
+    background: radial-gradient(circle, #8a5300, #000000); /* Change background on hover */
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+/* Add this to your existing CSS */
+
+/* Button container styling */
+.button-container4 {
+    display: flex;
+}
+
+/* Primary and Secondary columns styling */
+.primary-buttons-column,
+.secondary-buttons-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Adjust space between primary buttons */
+}
+
+/* Gap between primary and secondary columns */
+.primary-buttons-column {
+    margin-right: 40px; /* Adjust the gap between primary and secondary columns */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .button-container4 {
+        flex-direction: column; /* Stack columns in a vertical column on smaller screens */
+    }
+    .primary-buttons-column,
+    .secondary-buttons-column {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
+
+
+/* Section 5 */
+.section-5 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Section heading styling */
+/* Section heading styling */
+.section-heading5 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 34px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.section-heading5:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading5:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+
+.section-container5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text1-container5 {
+    width: 45%; /* Adjust width as needed */
+    padding-left: 20px;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.text1-container5 p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5;
+}
+
+.text1-container5:hover {
+    transform: translateY(-5px); /* Increase size on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px; /* Add margin between paragraph and list */
+    /* Center the list items */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add margin between list items */
+    position: relative; /* Position relative for pseudo-element styling */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+ul li:hover {
+    transform: translateX(5px); /* Increase size on hover */
+}
+
+ul li:before {
+    content: '\2022'; /* Bullet point Unicode character */
+    color: #ff9900; /* Orange color */
+    font-size: 20px; /* Adjust font size as needed */
+    position: absolute;
+    left: -20px; /* Adjust the distance of the bullet point from the text */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image1-container5 {
+    width: 45%; /* Adjust width as needed */
+    text-align: center; /* Center the image */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.image1-container5 img {
+    width: 50%; /* Adjust the width of the image */
+    height: auto;
+    display: block; /* Remove any residual spacing below the image */
+    margin: 0 auto; /* Center the image */
+}
+
+.image1-container5:hover {
+    transform: translateY(-5px); /* Increase size on hover */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .section-container5 {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .text1-container5 {
+        width: 100%; /* Make elements take full width on smaller screens */
+        margin-bottom: 20px; /* Add margin between elements */
+        padding-left: 0; /* Remove left padding on smaller screens */
+    }
+
+    .image1-container5 {
+        width: 100%; /* Make elements take full width on smaller screens */
+        margin-bottom: 20px; /* Add margin between elements */
+    }
+}
+
+/* Section 6 */
+/* Section 6 */
+.section-6 {
+    background: #f0f0f0;
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+/* Section heading styling */
+/* Section heading styling */
+.section-heading6 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 34px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.section-heading6:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading6:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+.video-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow videos to wrap to the next line on smaller screens */
+}
+
+.video-link {
+    width: 30%; /* Adjust the width of each video link */
+    margin-bottom: 20px; /* Add margin between videos */
+    text-decoration: none; /* Remove default link styling */
+}
+
+video {
+    width: 100%; /* Make the video fill its container */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Stack videos in a single column on smaller screens */
+    }
+
+    .video-link {
+        width: 80%; /* Adjust the width of each video link for better spacing */
+    }
+}
+
+
+/* Section 7 */
+/* Section 7 */
+.section-7 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.client-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.client-image {
+    width: 150px;
+    height: 150px;
+    background: url('https://newsroompost.com/wp-content/uploads/2020/04/Dr-Vivek-Bindra-Bada-Business-founder-CEO.jpg') center/cover no-repeat;
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Add transition for zoom effect on hover */
+}
+
+.client-image:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.client-info {
+    text-align: center;
+}
+
+.client-info h2 {
+    font-size: 18px;
+    color: #ff9900; /* Orange color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transitions for color and zoom effect on hover */
+}
+
+.client-info h2:hover {
+    color: #ffcc00; /* Yellow color on hover */
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.client-info h1 {
+    font-size: 36px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transitions for color and zoom effect on hover */
+    color: #ff9900; /* Orange color on hover */
+}
+
+.client-info h1:hover {
+    
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.client-info h3 {
+    font-size: 16px;
+    color: #555; /* Dark gray color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transitions for color and zoom effect on hover */
+}
+
+.client-info h3:hover {
+    color: #777; /* Slightly lighter gray on hover */
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.client-info p {
+    font-size: 20px;
+    color: #333; /* Dark color for text */
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transitions for color and zoom effect on hover */
+}
+
+.client-info p:hover {
+    color: #555; /* Darker gray on hover */
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ffcc00, #ff9900); /* Yellow to Orange gradient */
+    border-radius: 15px; /* Circular corners */
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transitions for gradient and zoom effect on hover */
+}
+
+.read-more:hover {
+    background: linear-gradient(135deg, #ff9900, #ffcc00); /* Orange to Yellow gradient on hover */
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+
+/* Section 8 */
+/* Section 8 Heading Styling */
+.section-heading8 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 34px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    margin-bottom: 60px;
+}
+
+.section-heading8:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading8:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+.cards-wrapper{
+    display: flex;
+}
+
+
+.col-lg-4 {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-lg-4 img {
+    margin-bottom: 10px; /* Add some space between image and heading */
+}
+
+.carousel-inner{
+    background-color: #f0f0f0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fw-normal{
+    font-size: 20px;
+}
+
+
+/* For larger screens (greater than or equal to 567px) */
+@media (min-width: 567px) {
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        transition: max-width 0.3s ease;
+    }
+}
+
+/* For smaller screens (less than 567px) */
+@media (max-width: 567px) {
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        transition: max-width 0.3s ease;
+    }
+}
+
+
+/* Section 10 Styles */
+.section-10 {
+    background: rgb(18, 13, 0);
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Contact container styling */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Brand container styling */
+.brand-container {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.brand-container img {
+    width: 100%; /* Make the image fill its container */
+    height: auto;
+    margin-bottom: 20px; /* Add space between image and text */
+}
+
+.brand-container p {
+    font-size: 14px;
+    color: #ffffff; /* Dark color for text */
+}
+
+/* Contact info container styling */
+.contact-info-container {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.contact-info-container h2 {
+    color: #ff9900; /* Orange color for the heading */
+    font-size: 25px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add space between heading and links */
+}
+
+.contact-info-container a {
+    display: block;
+    font-size: 14px;
+    color: #ffffff; /* Dark color for text */
+    margin-bottom: 10px; /* Add space between links */
+}
+
+/* App store container styling */
+.app-store-container {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.app-store-container h2 {
+    color: #ff9900; /* Orange color for the heading */
+    font-size: 25px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add space between heading and images */
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.app-store-container a img {
+    width: 100px; /* Adjust the width of the images */
+    height: auto;
+    margin-bottom: 10px; /* Add space between images */
+}
+
+
+
+
+/* Add this to your existing CSS */
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-detail {
+   
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-detail img {
+    width: 18px; /* Adjust the width of the icons as needed */
+    margin-right: 10px; /* Add space between the icon and text */
+    padding-bottom: 10px;
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack containers in a vertical column on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .brand-container,
+    .contact-info-container,
+    .app-store-container {
+        width: 100%; /* Make containers take full width on smaller screens */
+        margin-bottom: 20px; /* Add space between containers */
+    }
+}
+
+/* Add this to your existing CSS for Section 10 */
+
+/* Glowing effect on images */
+/* Add this modification to your existing CSS for Section 10 */
+
+/* Zoom-in effect on images with permanent shadow */
+.brand-container img,
+.app-store-container a img {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transitions */
+    filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.7));
+}
+
+.brand-container img:hover,
+.app-store-container a img:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+   
+}
+
+
+/* Hover effect on headings and links */
+.contact-info-container h2:hover,
+.app-store-container h2:hover,
+.contact-info-container a:hover,
+.app-store-container a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Dynamic scaling effect on headings */
+.contact-info-container h2,
+.app-store-container h2 {
+    
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.contact-info-container h2:hover,
+.app-store-container h2:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Dynamic scaling effect on links */
+.contact-info-container a,
+.app-store-container a {
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    padding-left: 20px;
+}
+
+.contact-info-container a:hover,
+.app-store-container a:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .brand-container img,
+    .contact-info-container h2,
+    .contact-info-container a,
+    .app-store-container h2,
+    .app-store-container a {
+        transition: none; /* Remove transition on smaller screens for a smoother experience */
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+}
+
+.footer-link,
+.footer-divider {
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.footer-link a {
+    color: #fff; /* Link text color */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition for hover effects */
+}
+
+.footer-link a:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    color: #ff9900; /* Orange color on hover */
+    
+}
+
+.footer-divider {
+    height: 20px; /* Adjust the height of the vertical line */
+    width: 2px; /* Width of the vertical line */
+    background-color: #fff; /* Color of the vertical line */
+}
+
+.footer-bottom {
+    width: 100%; /* Take full width */
+     /* Adjust margin as needed */
+    animation: fadeInUp 1s ease; /* Add fade-in animation */
+}
+.footer-bottom:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    color: #ff9900; /* Orange color on hover */
+    
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply font styles to all headings */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Your preferred font */
+    font-weight: 900; /* Very bold for H1 */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Your preferred font */
+    font-weight: 700; /* Bold for H2 */
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif; /* Your preferred font */
+    font-weight: 700; /* Semi-bold for H3 */
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif; /* Your preferred font */
+    font-weight: 400; /* Medium for H4 */
+}
+
+/* Apply font styles to all paragraphs */
+p {
+    font-family: 'Roboto', sans-serif; /* Your preferred font */
+    font-weight: 400; /* Regular weight for paragraphs */
+}
+
+/* Apply font styles to all anchor tags */
+a {
+    font-family: 'Lato', sans-serif; /* Your preferred font */
+    text-decoration: none; /* Remove default underline */
+    color: #0366d6; /* Your preferred link color */
+}
+
+/* Apply different styles to hovered anchor tags */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff6600; /* Your preferred hover color */
+}
+
+
+/* Add this to your existing CSS */
+
+/* WhatsApp Logo styling */
+/* Add this to your existing CSS */
+
+/* chatbot Logo styling */
+.chatbot-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    z-index: 999; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    animation: moveUpDown 2s infinite alternate; 
+  }
+  
+  .chatbot-logo img {
+    width: 170px; 
+    height: auto;
+  }
+  
+  .chatbot-logo:hover {
+    transform: scale(1.1); 
+  }
+  @keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); 
+    }
+}
+  
+
+  /* Add this to your existing CSS */
+
+/* Opposite Logo styling */
+/* Updated CSS for Opposite Logo */
+
+.opposite-logo {
+    position: fixed;
+    bottom: 45px;
+    left: 17px;
+    z-index: 999; /* Ensure it's above other elements */
+    cursor: pointer;
+    animation: moveUpDown 2s infinite alternate; /* Continuous up and down animation */
+}
+
+.opposite-logo img {
+    width: 60px; /* Adjust the width as needed */
+    height: auto;
+    transition: transform 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.opposite-logo:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Adjust the distance it moves up and down */
+    }
+}
+
+  

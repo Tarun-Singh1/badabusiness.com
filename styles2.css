@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Section 4 */
+.section-4 {
+    background: #ffffff;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Section heading styling */
+.section-heading4 {
+    color: #ff9900; /* Orange color for the heading */
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between heading and content */
+    position: relative;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.section-heading4:after {
+    content: '';
+    display: block;
+    width: 40px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #ff9900; /* Orange color for the line */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance between the line and text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-heading4:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Button container styling */
+.button-container4 {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust space between buttons */
+    padding: 20px 20px;
+}
+
+/* Primary button styling */
+.primary-button,
+.secondary-button {
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+}
+
+/* Primary button styling */
+.primary-button,
+.secondary-button {
+    background: radial-gradient(circle, rgb(0, 0, 0), #a06001); /* Orange gradient background */
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* Hover effects for both buttons */
+.primary-button:hover,
+.secondary-button:hover {
+    background: radial-gradient(circle, #8a5300, #000000); /* Change background on hover */
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+/* Add this to your existing CSS */
+
+/* Button container styling */
+.button-container4 {
+    display: flex;
+}
+
+/* Primary and Secondary columns styling */
+.primary-buttons-column,
+.secondary-buttons-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust space between primary buttons */
+}
+
+/* Gap between primary and secondary columns */
+.primary-buttons-column {
+    margin-right: 40px; /* Adjust the gap between primary and secondary columns */
+}
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .button-container4 {
+        flex-direction: column; /* Stack columns in a vertical column on smaller screens */
+    }
+    .primary-buttons-column,
+    .secondary-buttons-column {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
